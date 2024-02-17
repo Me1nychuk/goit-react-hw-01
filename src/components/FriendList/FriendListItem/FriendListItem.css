@@ -1,0 +1,18 @@
+.friend-avatar {
+  display: block;
+  margin: 0 auto;
+}
+.friend-name {
+  color: black;
+  margin: 5px auto;
+}
+.status {
+  margin: 0 auto;
+  font-size: 12px;
+}
+.status.red {
+  color: red;
+}
+.status.green {
+  color: green;
+}
