@@ -1,32 +1,32 @@
 import React from 'react';
-import './Profile.css'
+import css from './Profile.module.css'
 
 const Profile = ({ username, tag, location, image, stats: { followers, views, likes } }) => {
     return (
-        <div className='profile-block'>
-            <div className='profile-main-info'>
+        <div className={css['profile-block']}>
+            <div className={css['profile-main-info']}>
                 <img
                     src={image}
                     alt={username}
-                    className='profile-avatar'
+                    className={css['profile-avatar']}
                 />
-                <p className='profile-name'>{username}</p>
-                <p className='profile-info'>@{tag}</p>
-                <p className='profile-info'>{location}</p>
+                <p className={css['profile-name']}>{username}</p>
+                <p className={css['profile-info']}>@{tag}</p>
+                <p className={css['profile-info']}>{location}</p>
             </div>
 
-            <ul className='profile-stats'>
+            <ul className={css['profile-stats']}>
                 <li>
-                    <span className='profile-stats-name'>Followers</span>
-                    <span className='profile-stats-value'>{followers}</span>
+                    <span className={css['profile-stats-name']}>Followers</span>
+                    <span className={css['profile-stats-value']}>{followers}</span>
                 </li>
                 <li>
-                    <span className='profile-stats-name'>Views</span>
-                    <span className='profile-stats-value'>{views}</span>
+                    <span className={css['profile-stats-name']}>Views</span>
+                    <span className={css['profile-stats-value']}>{views}</span>
                 </li>
                 <li>
-                    <span className='profile-stats-name'>Likes</span>
-                    <span className='profile-stats-value'>{likes}</span>
+                    <span className={css['profile-stats-name']}>Likes</span>
+                    <span className={css['profile-stats-value']}>{likes}</span>
                 </li>
             </ul>
         </div>
